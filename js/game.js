@@ -22,9 +22,9 @@
    //set background color
   backgroundColor: 0x5f6e7a,
  scale: {
-     mode: phaser.scale.FIT,
+     mode:Phaser.Scale.FIT,
   //we replaced it in the middle of the page
-      autoCenter: phaser.scale.CENTER_BOTH,
+      autoCenter: Phaser.Scale.CENTER_BOTH,
    },
 },
 
