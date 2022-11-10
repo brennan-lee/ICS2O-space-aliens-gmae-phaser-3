@@ -28,5 +28,5 @@
    },
 },
 
-const game = new Phaser.Game(config);
+ game = new Phaser.Game(config);
 console.log(game);
