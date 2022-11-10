@@ -24,7 +24,7 @@
  scale: {
      mode: phaser.scale.FIT,
   //we replaced it in the middle of the page
-      autocenter: phaser.scale.CENTER_BOTH
+      autoCenter: phaser.scale.CENTER_BOTH,
    },
 },
 
