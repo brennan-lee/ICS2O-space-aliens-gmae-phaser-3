@@ -16,17 +16,17 @@ const config = {
   physics: {
     default: "arcade",
     arcade: {
-      debug: true
+      debug: true,
     },
-},
-   //set background color
+  },
+  //set background color
   backgroundColor: 0x5f6e7a,
   scale: {
-    mode:Phaser.Scale.FIT,
+    mode: Phaser.Scale.FIT,
     //we replaced it in the middle of the page
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-}
+};
 
-const game = new Phaser.Game(config)
-console.log(game)
+const game = new Phaser.Game(config);
+console.log(game);
