@@ -23,7 +23,7 @@
   backgroundColor: 0x5f6e7a,
  scale: {
      mode: phaser.scale.FIT,
-     //we replaced it in the middle of the page
+  //we replaced it in the middle of the page
       autocenter: phaser.scale.CENTER_BOTH
    },
 },
