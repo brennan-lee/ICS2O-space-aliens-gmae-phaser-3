@@ -17,22 +17,22 @@ class SplashScene extends Phaser.Scene {
     super({ key: splahScene });
   }
 
-  /**
-   * Can be defined on your own scenes
-   * This mathod is called by the Scene Manager when  the scene start,
-   *  before preload() and crate().
-   *   @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
-   */
-  init(data) {
-    This.cameras.main.setBackgroundColor(ffffff);
-  }
-  /**
-   * can be defined on your own scenes.
-   * use it to load assets.
-   */
-  preload() {
-    console.log(SplashScene);
-  }
+/**
+ * Can be defined on your own scenes
+ * This mathod is called by the Scene Manager when  the scene start,
+ *  before preload() and crate().
+ *   @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+ */
+init(data) {
+    This.cameras.main.setBackgroundColor(ffffff)
+}
+/**
+ * can be defined on your own scenes.
+ * use it to load assets.
+ */
+preload() {
+    console.log("Splash Scene")
+}
 
   /**
    * can be defined on your own scene.
