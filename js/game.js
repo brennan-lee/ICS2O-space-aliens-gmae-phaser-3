@@ -6,6 +6,12 @@
 // Created on: nov 2022
 // This is the phaser3 game configuration file
 
+// scene import statements
+import SplashScene from "./splahScene.js"
+
+// crate the new scenes
+const splahScene = SplashScene()
+
 /**
  * start phaser game.
  */
@@ -29,4 +35,11 @@ const config = {
 };
 
 const game = new Phaser.Game(config);
-console.log(game);
+// console.log(game);
+
+// load scenes
+// note: remember any "key" is global and CAN NOT be reused!
+game.scene.add("splashScene", splahScene)
+
+// the start scene
+game.scene.start(splahScene)
