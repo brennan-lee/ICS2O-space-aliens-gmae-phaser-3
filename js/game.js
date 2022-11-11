@@ -7,10 +7,10 @@
 // This is the phaser3 game configuration file
 
 // scene import statements
-import SplashScene from "./splahScene.js";
+import SplashScene from "./splahScene.js"
 
 // crate the new scenes
-const splahScene = SplashScene();
+const splahScene = SplashScene()
 
 /**
  * start phaser game.
