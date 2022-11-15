@@ -39,7 +39,7 @@ const game = new Phaser.Game(config);
 
 // load scenes
 // note: remember any "key" is global and CAN NOT be reused!
-game.scene.add("splashScene", splahScene);
+game.scene.add("splashScene", splahScene)
 
 // the start scene
-game.scene.start("splahScene");
+game.scene.start("splahScene")
