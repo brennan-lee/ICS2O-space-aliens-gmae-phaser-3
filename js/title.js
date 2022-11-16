@@ -4,7 +4,7 @@
 //
 // Created by: Brennan Lee
 // Created on: nov 2022
-// This is tittle Scene
+// This is title Scene
 
 /**
  *  This is the Title Scene.
