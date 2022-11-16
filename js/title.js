@@ -7,14 +7,14 @@
 // This is tittle Scene
 
 /**
- *  This is the Tittle Scene.
+ *  This is the Title Scene.
  */
-class TittleScene extends Phaser.Scnene {
+class TitleScene extends Phaser.Scnene {
   /**
    * This is the construtor.
    */
   constructor() {
-    super({ key: "tittlescene" });
+    super({ key: "titlescene" });
   }
 
   /**
@@ -45,4 +45,4 @@ class TittleScene extends Phaser.Scnene {
     //pass
   }
 }
-export default TittleScene;
+export default TitleScene;

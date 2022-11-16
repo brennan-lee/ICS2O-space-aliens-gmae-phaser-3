@@ -21,7 +21,7 @@ class SplashScene extends Phaser.Scene {
    * Can be defined on your own scenes
    * This mathod is called by the Scene Manager when  the scene start,
    *  before preload() and crate().
-   *   @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   *  @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
     This.cameras.main.setBackgroundColor(ffffff);
@@ -31,7 +31,7 @@ class SplashScene extends Phaser.Scene {
    * use it to load assets.
    */
   preload() {
-    console.log("Splash Scene");
+    console.log("Splash Scene")
   }
 
   /**
@@ -49,8 +49,8 @@ class SplashScene extends Phaser.Scene {
    * @param {number} delta - The delta time in ms since the last frame.
    */
   update(time, delta) {
-    // pass
+    this.scene.switch("titleScene")
   }
 }
 
-export default SplashScene;
+export default SplashScene
