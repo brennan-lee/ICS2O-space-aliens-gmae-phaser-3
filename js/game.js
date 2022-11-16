@@ -12,7 +12,7 @@ import TitleScene from "./titleScene"
 
 // crate the new scenes
 const splashScene = new SplashScene()
-import titleScene = new TitleScene()
+const titleScene = new TitleScene()
 
 /**
  * start phaser game.
