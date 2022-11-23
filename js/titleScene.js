@@ -9,12 +9,12 @@
 /**
  *  This is the Title Scene.
  */
-class TitleScene extends Phaser.Scnene {
+class TitleScene extends Phaser.Scene {
   /**
    * This is the construtor.
    */
   constructor() {
-    super({ key: "titlescene" });
+    super({ key: "titleScene" });
   }
 
   /**
@@ -24,7 +24,7 @@ class TitleScene extends Phaser.Scnene {
    * @param {object} data - any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundcolor("ffffff");
+    this.cameras.main.setBackgroundColor("ffffff");
   }
 
   /**
@@ -33,6 +33,15 @@ class TitleScene extends Phaser.Scnene {
    */
   preload() {
     console.log("Tittle Scene");
+  }
+
+  /**
+   * can be defined on your own scene.
+   * use it to create your game objects.
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
+  create(data) {
+    // pass
   }
 
   /**

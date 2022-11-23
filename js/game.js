@@ -8,7 +8,7 @@
 
 // scene import statements
 import SplashScene from "./splashScene.js";
-import TitleScene from "./titleScene";
+import TitleScene from "./titleScene.js";
 
 // crate the new scenes
 const splashScene = new SplashScene();
@@ -37,12 +37,12 @@ const config = {
 };
 
 const game = new Phaser.Game(config);
-// console.log(game);
+console.log(game);
 
 // load scenes
 // note: remember any "key" is global and CAN NOT be reused!
-game.scene.add("splashScene", splahScene);
+game.scene.add("splashScene", splashScene);
 game.scene.add("titleScene", titleScene);
 
 // the start scene
-game.scene.start("splahScene");
+game.scene.start("splashScene");
