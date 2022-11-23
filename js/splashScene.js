@@ -35,7 +35,7 @@ class SplashScene extends Phaser.Scene {
    */
   preload() {
     console.log("Splash Scene");
-    this.load.image("splashSceneBackground", "./assets/splashSceneImage.png")
+    this.load.image("splashSceneBackground", "./assets/splashSceneImage.png");
   }
 
   /**
@@ -48,9 +48,9 @@ class SplashScene extends Phaser.Scene {
       0,
       0,
       "splashSceneBackground"
-    )
-    this.SplashSceneBackgroundImage.x = 1920 / 2
-    this.SplashSceneBackgroundImage.y = 1080 / 2
+    );
+    this.SplashSceneBackgroundImage.x = 1920 / 2;
+    this.SplashSceneBackgroundImage.y = 1080 / 2;
   }
 
   /**
@@ -61,7 +61,7 @@ class SplashScene extends Phaser.Scene {
    */
   update(time, delta) {
     if (time > 3000) {
-    this.scene.switch("titleScene");
+      this.scene.switch("titleScene");
     }
   }
 }
