@@ -14,7 +14,7 @@ class SplashScene extends Phaser.Scene {
    * This mathod is the construtor.
    */
   constructor() {
-    super({ key: splahScene });
+    super({ key: "splashScene" });
   }
 
   /**
@@ -24,8 +24,9 @@ class SplashScene extends Phaser.Scene {
    *  @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    This.cameras.main.setBackgroundColor("ffffff");
+    this.cameras.main.setBackgroundColor("ffffff");
   }
+
   /**
    * can be defined on your own scenes.
    * use it to load assets.
@@ -42,6 +43,7 @@ class SplashScene extends Phaser.Scene {
   create(data) {
     // pass
   }
+
   /**
    * this should beoverridden by your own Scenes.
    * This mathod is called once per game step while the scene is running.
