@@ -14,15 +14,15 @@ class TitleScene extends Phaser.Scene {
    * This is the construtor.
    */
   constructor() {
-    super({ key: "titleScene" });
+    super({ key: "titleScene" })
 
-    this.titleSceneBackgroundImage = null;
+    this.titleSceneBackgroundImage = null
     this.titleSceneText - null;
     this.titleSceneTextStlye = {
       font: "200px Times",
       fill: "#fde4b9",
       align: "center",
-    };
+    }
   }
 
   /**
@@ -32,7 +32,7 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("0000FF");
+    this.cameras.main.setBackgroundColor("0000FF")
   }
 
   /**
@@ -40,8 +40,8 @@ class TitleScene extends Phaser.Scene {
    * use it to load assets.
    */
   preload() {
-    console.log("Tittle Scene");
-    this.load.image("titleSceneBackground", "assets/aliens_screen_image.jpg");
+    console.log("Tittle Scene")
+    this.load.image("titleSceneBackground", "assets/aliens_screen_image.jpg")
   }
 
   /**
@@ -53,8 +53,8 @@ class TitleScene extends Phaser.Scene {
     this.titleSceneBackgroundImage = this.add
       .sprite(0, 0, "titleSceneBackground")
       .setScale(2.75);
-    this.titleSceneBackgroundImage.x = 1920 / 2;
-    this.titleSceneBackgroundImage.y = 1080 / 2;
+    this.titleSceneBackgroundImage.x = 1920 / 2
+    this.titleSceneBackgroundImage.y = 1080 / 2
 
     this.titleSceneText = this.add
       .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.titleSceneTextStyle)
@@ -71,4 +71,4 @@ class TitleScene extends Phaser.Scene {
     //pass
   }
 }
-export default TitleScene;
+export default TitleScene
