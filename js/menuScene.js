@@ -40,7 +40,7 @@ class MenuScene extends phaser.scene {
    * use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  crate(data) {
+  create(data) {
     // pass
   }
 
