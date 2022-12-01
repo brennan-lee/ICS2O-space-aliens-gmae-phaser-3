@@ -32,7 +32,7 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("0000FF")
+    this.cameras.main.setBackgroundColor("FFFFFF")
   }
 
   /**
@@ -57,7 +57,7 @@ class TitleScene extends Phaser.Scene {
     this.titleSceneBackgroundImage.y = 1080 / 2
 
     this.titleSceneText = this.add
-      .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.titleSceneTextStyle)
+      .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.titleSceneTextStlye)
       .setOrigin(0.5)
   }
 
@@ -68,7 +68,9 @@ class TitleScene extends Phaser.Scene {
    * @param {number} delta - the delta time in ms since last frame.
    */
   update(time, delta) {
-    //pass
+    if (time > 6000) {
+      this.scene.switch("menuScene")
+    }
   }
 }
 export default TitleScene

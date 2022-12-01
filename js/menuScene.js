@@ -9,7 +9,7 @@
 /**
  * This class is the Menu Scene
  */
-class MenuScene extends phaser.scene {
+class MenuScene extends Phaser.Scene {
   /**
    * This method is the construtor.
    */
@@ -24,7 +24,7 @@ class MenuScene extends phaser.scene {
    *  @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundcolor("FF0000")
+    this.cameras.main.setBackgroundColor("FF0000")
   }
 
   /**
