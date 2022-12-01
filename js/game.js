@@ -14,7 +14,7 @@ import MenuScene from "./menuScene.js"
 // crate the new scenes
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
-const menuSecene = new MenuScene()
+const menuScene = new MenuScene()
 
 /**
  * start phaser game.
